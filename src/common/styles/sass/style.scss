@@ -1,0 +1,18 @@
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/rest";
+@import "partials/button";
+@import "partials/navbar";
+@import "partials/herosection";
+@import "partials/card";
+@import "partials/services";
+@import "partials/products";
+@import "partials/signup";
+@import "partials/footer";
+
+.home,
+.services,
+.products,
+.sign-up {
+  @include page-layout;
+}

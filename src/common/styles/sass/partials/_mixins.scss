@@ -1,0 +1,17 @@
+@mixin page-layout {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+@mixin page-background {
+  //background-image: url("/images/img-8.jpg");
+  background-color: $blue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $btn_white;
+  font-size: 100px;
+}

@@ -1,0 +1,40 @@
+.btn-hover {
+  transition: all 0.3s ease-out;
+  background: $btn_white;
+  color: $btn_black;
+  transition: 250ms;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &--primary {
+    background-color: $btn_white;
+    color: $btn_black;
+    border: 1px solid $btn_white;
+  }
+  &--outline {
+    background-color: transparent;
+    color: $btn_white;
+    padding: 8px 20px;
+    border: 1px solid $btn_white;
+    transition: all 0.3s ease-out;
+  }
+  &--medium {
+    padding: 8px 20px;
+    font-size: 18px;
+    &:hover {
+      @extend .btn-hover;
+    }
+  }
+  &--large {
+    padding: 12px 26px;
+    font-size: 20px;
+    &:hover {
+      @extend .btn-hover;
+    }
+  }
+}
